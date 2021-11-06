@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.nav-style{
+   color: #D91E1E;
+}
+.nav-style:hover{
+    background-color: lightslategrey;
+    color: navy;
+}
