@@ -9,6 +9,13 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
+.bg-dsgn{
+    background-color: lightblue;
+    font-size: larger;
+    font-weight: bold;
+    border-radius:5px ;
+}
+
 
 .context {
     width: 100%;
@@ -25,7 +32,7 @@ body{
 
 
 .area{
-    background: #4e54c8;  
+    background: #6CC9DE;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:1050px;

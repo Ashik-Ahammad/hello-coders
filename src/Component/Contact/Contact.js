@@ -7,8 +7,7 @@ const Contact = () => {
         <div>
             <div class="context">
                 <h1 className="mb-5">HELLO CODERS BANGLADESH</h1>
-                {/* 
-                */}
+
 
                 <Container>
                     <Row >
@@ -19,17 +18,17 @@ const Contact = () => {
                         <Col >
                             <h4 className="text-warning">Contact us for any information</h4>
 
-                            <div className="bg-info py-3 mb-2">
+                            <div className="bg-dsgn py-3 mb-2">
                                 <p className="text-black">
                                     <a href="https://mail.google.com/" target="_blank" rel="noreferrer"><i class="fas fa-envelope text-white"></i>
                                     </a> hellocoders.info<i class="fas fa-at text-dark"></i>gmail.com
                                 </p>
                             </div>
-                            <div className="bg-info py-3 mb-2">
-                                <p className="text-warning"><a href="/contact"><i class="fas fa-phone-alt text-white"></i></a> <small className="text-black"> +8801621869524</small><span> (9AM - 8PM)</span></p>
+                            <div className="bg-dsgn py-3 mb-2">
+                                <p className="text-danger"><a href="/contact"><i class="fas fa-phone-alt text-white"></i></a> <small className="text-black"> +8801621869524</small><span> (9AM - 8PM)</span></p>
                             </div>
 
-                            <div className="bg-info py-3 mb-2">
+                            <div className="bg-dsgn py-3 mb-2">
                                 <p className="text-secondary"><a href="https://www.google.com/maps/place/Hello+Coders/@23.9088763,90.2197225,17.5z/data=!4m12!1m6!3m5!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!2sHello+Coders!8m2!3d23.9095002!4d90.2203552!3m4!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!8m2!3d23.9095002!4d90.2203552" target="_blank" rel="noreferrer"><i class="fas fa-map-marker-alt text-white" ></i></a> <span className="text-black">Dhamrai, Dhaka, Bangladesh</span></p>
                             </div>
 

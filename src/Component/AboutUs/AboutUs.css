@@ -1,0 +1,40 @@
+.about-img{
+    opacity: 0.2;
+}
+
+.aboutUS{
+    background-color: #4D5154;
+}
+
+.table-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.accr-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.arrow{
+    
+    transition: width 2s,height 2s,transform 2s;
+}
+
+.arrow:hover{
+    transform: rotate(90deg);
+    
+}
+
+.alignment{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

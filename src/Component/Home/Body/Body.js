@@ -42,19 +42,11 @@ const Body = (props) => {
 
                         <Col className="mt-5 pt-5w">
 
-                            <img className="img-fluid" src={banner} alt="" />
+                            <img className="img-fluid banner" src={banner} alt="" />
 
                         </Col>
                     </Row>
                 </Container>
-            </section>
-
-
-
-
-            <section>
-
-
             </section>
         </div>
 

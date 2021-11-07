@@ -11,6 +11,7 @@ import { Container, Typography } from '@mui/material';
 
 import './Home.css'
 import Courses from './Body/Courses/Courses';
+import Blog from './Blog/Blog';
 
 const Home = () => {
 
@@ -63,7 +64,7 @@ const Home = () => {
                     </Grid>
                 </Container>
             </Box>
-
+            <Blog></Blog>
             <Slider></Slider>
         </div>
     );
