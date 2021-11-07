@@ -5,9 +5,9 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="mt-5 pt-5">
-            <footer className="bg-dark">
+            <footer className="bg-colour">
                 <hr />
-                <Container className="mt-5">
+                <Container className="">
                     <Row justify-content-center >
 
                         <Col>
@@ -32,7 +32,6 @@ const Footer = () => {
 
                             &nbsp;  &nbsp;  &nbsp;
                             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in icon bg-primary text-white p-2   rounded-pill"></i></a>
-
 
                         </Col>
 

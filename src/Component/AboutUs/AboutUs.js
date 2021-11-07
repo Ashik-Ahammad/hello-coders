@@ -1,9 +1,11 @@
 import React from 'react';
+import image6 from '../../images/img6.jpg'
+
 
 const AboutUs = () => {
     return (
         <div>
-            <h3>A</h3>
+            <img className="w-50" src={image6} alt="" />
         </div>
     );
 };
