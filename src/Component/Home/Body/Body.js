@@ -9,7 +9,7 @@ const Body = (props) => {
 
     return (
         <div>
-            <section className="bg-design">
+            <section className="bg-design mb-5">
                 <Container className="mt-5">
                     <Row>
                         <Col>

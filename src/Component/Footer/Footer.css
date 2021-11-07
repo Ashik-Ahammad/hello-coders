@@ -4,8 +4,7 @@ body {
     
   }
 
-  
-  
+
   ul {
     display: flex;
     position: absolute;
@@ -73,10 +72,9 @@ body {
   ul li:nth-child(3) a:before {
     background: #0077b5;
   }
-  
-  
 
 
-
-
+  .text-infor{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
   

@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
+
 
 .nav-style{
-   color: #D91E1E;
+   color: #2193B0;
+   font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-style:hover{
-    background-color: lightslategrey;
-    color: navy;
+    background-color: whitesmoke;
+    color: black;
 }
