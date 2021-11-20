@@ -1,40 +1,52 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Button } from '@mui/material';
+import imgC from '../../../../images/img8.jpg';
+import imgJ from '../../../../images/img4.jpg';
+import imgP from '../../../../images/imgg3.jpg';
+import './Slider.css'
+
 
 const Slider = () => {
     return (
         <div className="mt-5">
             <Carousel fade>
+
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>H E L L O &nbsp; C O D E R S</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1632425422799-286dc4325dbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                        className="d-block w-100 height-slider"
+                        src={imgC}
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>H E L L O &nbsp; C O D E R S</h3>
+                        <Button sx={{ background: 'white' }} variant="contained"><a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank" rel="noreferrer" className="text-dark decor">LETS DO SOME C</a></Button>
+                        <h3 className="text-dark">H E L L O &nbsp; C O D E R S</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
+
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
-                        src="https://images.unsplash.com/photo-1632386474725-138bbf6e3f41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                        className="d-block w-100 height-slider"
+                        src={imgJ}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <Button sx={{ background: 'white' }} variant="contained"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_helloworld" target="_blank" rel="noreferrer" className="text-dark decor">LETS DO SOME JAVA</a></Button>
+                        <h3 className="text-dark">H E L L O &nbsp; C O D E R S</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 height-slider"
+                        src={imgP}
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>H E L L O &nbsp; C O D E R S</h3>
+                        <Button sx={{ background: 'white' }} variant="contained"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_intro" target="_blank" rel="noreferrer" className="text-dark decor">LETS DO SOME PHP</a></Button>
+                        <h3 className="text-dark">H E L L O &nbsp; C O D E R S</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

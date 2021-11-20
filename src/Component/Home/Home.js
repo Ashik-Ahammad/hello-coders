@@ -87,6 +87,7 @@ const Home = () => {
                     </Grid>
                 </Container>
             </Box>
+
             <Blog></Blog>
             <Slider></Slider>
         </div>

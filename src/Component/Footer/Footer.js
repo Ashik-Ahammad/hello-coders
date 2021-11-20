@@ -5,45 +5,79 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="mt-5 pt-5">
-            <footer className="bg-colour">
-                <hr />
-                <Container className="">
-                    <Row justify-content-center >
+            <div class="section bg-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <li><a href="#" target="_blank" rel="noreferrer">Pages</a></li>
+                                    <li><a href="https://www.google.com/maps/place/Hello+Coders/@23.9096478,90.218658,18z/data=!4m5!3m4!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!8m2!3d23.9095664!4d90.2203467" target="_blank" rel="noreferrer">Location</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Features</a></li>
 
-                        <Col>
-                            <h5 className="text-infor">For any kind of information <i class="fas fa-info-circle"></i></h5>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <p className="text-warning">
-                                <a href="https://mail.google.com/" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i>
-                                </a> hellocoders.info<i class="fas fa-at text-info"></i>gmail.com
-                            </p>
-                            <p className="text-warning"><i class="fas fa-phone-square-alt"></i><small className="text-danger"> +8801621869524</small></p>
-                        </Col>
+                        <div class="col-lg-3">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Resources</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <li><a href="#" target="_blank" rel="noreferrer">About Us</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Term &amp; Service</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <Col>
+                        <div class="col-lg-2">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <li><a href="#" target="_blank" rel="noreferrer">Sign Up </a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Login</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Terms of Services</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-4">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                                <p class="contact-info mt-4">  Contact us if need help with anything</p>
+                                <p class="contact-info"> <i class="fas fa-phone-square-alt"></i> +8801621-869-524</p>
+                                <div class="mt-5">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="https://www.facebook.com/hellocodersbd" target="_blank" rel="noreferrer">
+                                                <i class="fab facebook footer-social-icon fa-facebook-f"></i>
 
-                            <a href="https://www.facebook.com/hellocodersbd" target="_blank" rel="noreferrer">
+                                            </a>
+                                        </li>
 
-                                <i className="fab fa-facebook-f icon bg-primary text-white p-2  rounded-pill" ></i></a>
+                                        <li class="list-inline-item">
+                                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                                                <i class="fab twitter footer-social-icon fa-twitter"></i>
+                                            </a>
+                                        </li>
 
-                            &nbsp;  &nbsp;  &nbsp;
-                            <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="fab fa-twitter icon bg-primary text-white p-2 rounded-pill"></i></a>
+                                        <li class="list-inline-item"><a href="https://play.google.com/store" target="_blank" rel="noreferrer"><i class="fab google footer-social-icon fa-google"></i></a></li>
 
-                            &nbsp;  &nbsp;  &nbsp;
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in icon bg-primary text-white p-2   rounded-pill"></i></a>
+                                        <li class="list-inline-item"><a href="https://www.apple.com/app-store/"><i class="fab apple footer-social-icon fa-apple"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                        </Col>
+                    </div>
+                </div>
 
-                        <Col>
-                            <h4 className="text-info">
-                                Our Address
-                            </h4>
-                            <p className="text-secondary"><a href="https://www.google.com/maps/place/Hello+Coders/@23.9088763,90.2197225,17.5z/data=!4m12!1m6!3m5!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!2sHello+Coders!8m2!3d23.9095002!4d90.2203552!3m4!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!8m2!3d23.9095002!4d90.2203552" target="_blank" rel="noreferrer"><i class="fas fa-map-marker-alt"></i></a> Dhamrai, Dhaka, Bangladesh</p>
-                        </Col>
-                    </Row>
-                </Container>
-            </footer>
+                <div class="text-center mt-5">
+                    <p class="footer-alt mb-0 f-14">2021 © Hello Coders BD, All Rights Reserved</p>
+                </div>
+            </div>
         </div>
     );
 };

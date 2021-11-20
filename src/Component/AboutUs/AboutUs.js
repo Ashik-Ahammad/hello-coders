@@ -15,7 +15,9 @@ const AboutUs = () => {
             </div>
             <Container>
                 <Row>
-                    <Col><img className="img-fluid" src={image3} alt="" /></Col>
+                    <Col>
+                        <img className="img-fluid" src={image3} alt="" />
+                    </Col>
 
                     <Col className="table-style">
                         <Table striped bordered hover >

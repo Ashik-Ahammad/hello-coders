@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Button, TextField, Typography } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 import './Contact.css';
 
 const Contact = () => {
@@ -53,16 +55,74 @@ const Contact = () => {
                 </ul>
             </div>
 
-            <div className="mt-5">
-                <p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.122158317607!2d90.21849761547911!3d23.909344824343453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637391669884!5m2!1sen!2sbd" width="800" height="600" className="border border-2" allowfullscreen="" loading="lazy" title="Gmap"></iframe>
-                </p>
-            </div>
+
+            <Container className="row row-cols-1 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 g-4 ">
+                <Row>
+                    <Col >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4371018139136!2d90.2181580153646!3d23.909571288593096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637403641925!5m2!1sen!2sbd" width="350" height="300" className="border border-3 border-success rounded-3 mt-5" allowfullscreen="" loading="lazy" title="mapHC"></iframe>
+                    </Col>
+
+                    <Col className="mt-5">
+                        FIND US
+                    </Col>
+                </Row>
+
+            </Container>
 
 
-            <div className="bg-info w-75 mt-5 container">
-                <form action="">
-                    <label htmlFor="text">Send Feedback &nbsp;</label><input type="email" required name="email" placeholder="email" /><input className="p-2 m-2" type="text" name="text" placeholder="text" /><input className="p-2 bg-secondary" type="submit" value="Send" />
+
+            <div>
+
+                <Typography style={{ marginBottom: '5PX', color: 'black' }}>
+                    SEND FEEDBACK
+                </Typography>
+                <form style={{ color: 'white' }}>
+                    <TextField
+                        sx={{ mx: 1, width: '30%', color: 'primary.main' }}
+                        id="outlined-multiline-flexible"
+                        label="Name"
+                        name="name"
+                        type="text"
+                        multiline
+                        required
+                        maxRows={4}
+
+                    />
+                    <TextField
+                        sx={{ mx: 1, width: '30%' }}
+                        id="outlined-multiline-flexible"
+                        label="Email"
+                        name="email"
+                        type="email"
+                        multiline
+                        required
+                        maxRows={4}
+
+                    />
+                    <br />
+                    <TextField
+                        sx={{ width: '62%', m: 1 }}
+                        id="outlined-multiline-flexible"
+                        label="Subject"
+                        type="text"
+                        multiline
+                        maxRows={4}
+
+                    />
+                    <br />
+
+                    <TextField
+                        sx={{ mx: 1, width: '62%' }}
+                        id="outlined-multiline-static"
+                        label="Message"
+                        type="text"
+                        multiline
+                        rows={4}
+
+                    />
+                    <Button sx={{ width: '62%', m: 1, color: 'black', background: "transparent" }} type="submit" variant="contained" endIcon={<SendIcon />}>
+                        SEND
+                    </Button>
                 </form>
             </div>
         </div>

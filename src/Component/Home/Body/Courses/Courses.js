@@ -21,31 +21,34 @@ const Courses = (props) => {
                     <Placeholder xs={12} />
                 </Placeholder>
             </>
-            <Card sx={{ minWidth: 275, border: 1, borderColor: 'grey.500', p: 2, boxShadow: 0, color: 'blue' }}>
+            <div data-aos="zoom-in-down">
 
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        style={{ width: 'auto', height: '80px', margin: '0 auto' }}
-                        image={img}
-                        alt="icon"
-                    />
-                    <CardContent>
-                        <Typography variant="h5" component="div">
-                            {name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {description}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="warning">
-                        $ubscription
-                    </Button>
-                </CardActions>
-            </Card>
+                <Card sx={{ minWidth: 275, border: 1, borderColor: 'grey.500', p: 2, boxShadow: 0, color: 'blue' }}>
+
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            style={{ width: 'auto', height: '80px', margin: '0 auto' }}
+                            image={img}
+                            alt="icon"
+                        />
+                        <CardContent>
+                            <Typography variant="h5" component="div">
+                                {name}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                {description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Button size="small" color="warning">
+                            $ubscription
+                        </Button>
+                    </CardActions>
+                </Card>
+            </div>
         </Grid>
 
     );
