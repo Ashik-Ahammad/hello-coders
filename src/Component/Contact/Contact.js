@@ -51,7 +51,15 @@ const Contact = () => {
                     <li></li>
                     <li></li>
                 </ul>
-            </div >
+            </div>
+
+            <div className="mt-5">
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.122158317607!2d90.21849761547911!3d23.909344824343453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637391669884!5m2!1sen!2sbd" width="800" height="600" className="border border-2" allowfullscreen="" loading="lazy" title="Gmap"></iframe>
+                </p>
+            </div>
+
+
             <div className="bg-info w-75 mt-5 container">
                 <form action="">
                     <label htmlFor="text">Send Feedback &nbsp;</label><input type="email" required name="email" placeholder="email" /><input className="p-2 m-2" type="text" name="text" placeholder="text" /><input className="p-2 bg-secondary" type="submit" value="Send" />
