@@ -90,3 +90,13 @@ body {
     display: block;
     border-bottom: 1px solid #1bbc9b;
 }
+
+
+.icon1{
+    transform: translateY(0);
+  transition: 1s ease-in-out;
+}
+
+.icon1:hover{
+    transform: translateY(-15px);
+}

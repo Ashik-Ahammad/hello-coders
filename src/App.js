@@ -8,9 +8,13 @@ import Contact from './Component/Contact/Contact';
 import NotFound from './Component/NotFound/NotFound';
 import Header from './Component/Header/Header';
 import Footer from './Component/Footer/Footer';
+import Login from './Component/LOGIN/Login/Login';
+import Register from './Component/LOGIN/Register/Register';
 
 
 function App() {
+
+
   return (
     <div className="App">
 
@@ -33,6 +37,12 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
