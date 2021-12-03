@@ -35,7 +35,7 @@ const Body = (props) => {
                                     </h1>
                                 </div>
                                 <p className="mt-3">Hello Coders for all kind of software solution.</p>
-                                <div class="d-grid gap-2 col-6 mx-auto">
+                                <div class="d-grid gap-2 col-6 mx-auto" data-aos="flip-down">
                                     <button class="btn mt-3 btn-outline-secondary" type="button">Learn More</button>
                                 </div>
 

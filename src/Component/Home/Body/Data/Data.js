@@ -1,6 +1,5 @@
 import React from 'react';
 import './Data.css'
-import MoreModal from './Modal/MoreModal';
 
 
 
@@ -19,13 +18,16 @@ const Data = ({ services }) => {
 
 
                     <div className="card shadow-lg card-style">
-                        <img className="body-img img-fluid mx-auto mt-3 w-25 marg-pic" src={img} alt="img" />
-
+                        <div data-aos="zoom-in-up">
+                            <img className="body-img img-fluid mx-auto mt-3 w-25 marg-pic" src={img} alt="img" />
+                        </div>
                         <div className="card-body ">
                             <h5 className={id}><span>{name}</span></h5>
                             <hr className="pt-1"></hr>
                             <p className="card-text">{description}</p>
-                            <button type="button" class="btn btn-info btn-style">More Details</button>
+                            <div data-aos="zoom-in">
+
+                                <button type="button" class="btn btn-info btn-style">More Details</button></div>
                         </div>
                     </div>
                 </div>

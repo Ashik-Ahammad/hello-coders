@@ -84,7 +84,7 @@ const Login = () => {
                     {authError && <Alert severity="error">{authError}</Alert>
                     }
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} >
                     <img style={{ marginTop: '' }} src={loginImg} alt="" />
                 </Grid>
             </Grid>

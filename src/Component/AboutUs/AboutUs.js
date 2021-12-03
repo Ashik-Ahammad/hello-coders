@@ -78,8 +78,8 @@ const AboutUs = () => {
 
                             Innovation also inspires employees to do great work and contribute toward the greater good of the company. Ensure employees feel safe to share their ideas with managers and even higher-ups. Employees know the day-to-day operations best after all – they might just be the source of your next great breakthrough.</h5>
                         <NavLink style={{ textDecoration: 'none' }} to="/contact">
-                            <Button variant="contained" style={{ backgroundColor: '#5CE7ED', color: 'black' }}>
-                                Need Counselling?
+                            <Button variant="contained" style={{ backgroundColor: '#5CE7ED', color: 'brown' }}>
+                                Need Counselling ? Make a call !
                             </Button>
                         </NavLink>
                     </Col>

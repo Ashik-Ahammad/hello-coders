@@ -26,26 +26,32 @@ const Courses = (props) => {
                 <Card sx={{ minWidth: 275, border: 1, borderColor: 'grey.500', p: 2, boxShadow: 0, color: 'blue' }}>
 
                     <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            style={{ width: 'auto', height: '80px', margin: '0 auto' }}
-                            image={img}
-                            alt="icon"
-                        />
+                        <div data-aos="zoom-in">
+                            <CardMedia
+                                component="img"
+                                height="140"
+                                style={{ width: 'auto', height: '80px', margin: '0 auto' }}
+                                image={img}
+                                alt="icon"
+                            />
+                        </div>
                         <CardContent>
-                            <Typography variant="h5" component="div">
-                                {name}
-                            </Typography>
+                            <div data-aos="flip-up">
+                                <Typography variant="h5" component="div">
+                                    {name}
+                                </Typography>
+                            </div>
                             <Typography variant="body2" color="text.secondary">
                                 {description}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="warning">
-                            $ubscription
-                        </Button>
+                        <div data-aos="flip-left">
+                            <Button size="small" color="warning">
+                                $ubscription
+                            </Button>
+                        </div>
                     </CardActions>
                 </Card>
             </div>

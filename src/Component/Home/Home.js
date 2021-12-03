@@ -16,6 +16,8 @@ import './Home.css'
 import Courses from './Body/Courses/Courses';
 import Blog from './Blog/Blog';
 
+
+
 const Home = () => {
 
     const [service, setService] = useState([]);
@@ -39,10 +41,10 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="container ">
+        <div className="container">
             <Body></Body>
 
-            <div data-aos="zoom-in-up">
+            <div data-aos="zoom-in-up" id="termsService">
 
                 <Typography sx={{ fontWeight: 600, m: 2, color: '#80deea' }} variant="h6" component="div">
                     OUR SERVICES
@@ -70,7 +72,7 @@ const Home = () => {
             <Box sx={{ flexGrow: 1 }}>
                 <Container>
 
-                    <div data-aos="fade-down-right">
+                    <div data-aos="flip-up">
 
                         <Typography sx={{ fontWeight: 600, m: 3, color: 'goldenRod', fontFamily: 'revert' }} variant="h5" component="div">
                             OUR PREMIUM COURSES
@@ -90,6 +92,8 @@ const Home = () => {
 
             <Blog></Blog>
             <Slider></Slider>
+
+
         </div>
     );
 };
