@@ -14,7 +14,7 @@ const Footer = () => {
                                 <ul class="list-unstyled footer-link mt-4">
                                     <li><a href="#" target="_blank" rel="noreferrer">Pages</a></li>
                                     <li><a href="https://www.google.com/maps/place/Hello+Coders/@23.9096478,90.218658,18z/data=!4m5!3m4!1s0x3755ef9387f6a067:0x885cadeb8c3c50eb!8m2!3d23.9095664!4d90.2203467" target="_blank" rel="noreferrer">Location</a></li>
-                                    <li><a href="#" target="_blank" rel="noreferrer">Features</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Privacy Policy</a></li>
 
                                 </ul>
                             </div>
@@ -24,8 +24,8 @@ const Footer = () => {
                             <div class="">
                                 <h6 class="footer-heading text-uppercase text-white">Resources</h6>
                                 <ul class="list-unstyled footer-link mt-4">
-                                    <li><a href="#" target="_blank" rel="noreferrer">About Us</a></li>
-                                    <li><a href="#" target="_blank" rel="noreferrer">Term &amp; Service</a></li>
+                                    <li><a href="/aboutus" target="_blank" rel="noreferrer">About Us</a></li>
+                                    <li><a href="#" target="_blank" rel="noreferrer">Terms &amp; Service</a></li>
                                     <li><a href="#" target="_blank" rel="noreferrer">Help</a></li>
                                 </ul>
                             </div>
@@ -37,8 +37,8 @@ const Footer = () => {
                                 <ul class="list-unstyled footer-link mt-4">
                                     <li><a href="/register">Sign Up </a></li>
                                     <li><a href="/login">Login</a></li>
-                                    <li><a href="/home" target="_blank" rel="noreferrer">Back to home</a></li>
-                                    <li><a href="#" target="_blank" rel="noreferrer">Privacy Policy</a></li>
+                                    <li><a href="/home">Back to home</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                             <div class="">
                                 <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
                                 <p class="contact-info mt-4">  Contact us if need help with anything</p>
-                                <p class="contact-info"> <i class="fas fa-phone-square-alt"></i> +8801621-869-524</p>
+                                <p class="contact-info"> <i class="fas fa-phone-square-alt text-info p-1"></i> +8801981-337-121</p>
                                 <div class="mt-5">
                                     <ul class="list-inline">
                                         <li class="list-inline-item icon1">
@@ -57,15 +57,17 @@ const Footer = () => {
                                             </a>
                                         </li>
 
+                                        <li class="list-inline-item icon1"><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i class="fab youtube footer-social-icon fa-youtube youtube-style"></i></a></li>
+
                                         <li class="list-inline-item icon1">
-                                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                                                <i class="fab twitter footer-social-icon fa-twitter"></i>
+                                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                                                <i class="fab linkedin footer-social-icon fa-linkedin linked-style"></i>
                                             </a>
                                         </li>
 
-                                        <li class="list-inline-item icon1"><a href="https://play.google.com/store" target="_blank" rel="noreferrer"><i class="fab google footer-social-icon fa-google"></i></a></li>
+                                        <li class="list-inline-item icon1"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noreferrer"><i class="fas fa-envelope mail-style footer-social-icon"></i></a></li>
 
-                                        <li class="list-inline-item icon1"><a href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer"><i class="fab apple footer-social-icon fa-apple"></i></a></li>
+
                                     </ul>
                                 </div>
                             </div>

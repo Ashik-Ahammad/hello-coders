@@ -7,6 +7,7 @@ import image5 from '../../images/img5.jpg'
 import icon1 from '../../images/1.png';
 import icon2 from '../../images/2.png';
 import icon3 from '../../images/3.png';
+import { NavLink } from 'react-router-dom';
 
 const AboutUs = () => {
     return (
@@ -76,9 +77,11 @@ const AboutUs = () => {
                         <h5>Innovation is at the heart of any successful company. Innovation keeps an organization at the top of their game, allowing them to flex their competitive muscles and take pride in the work they do.
 
                             Innovation also inspires employees to do great work and contribute toward the greater good of the company. Ensure employees feel safe to share their ideas with managers and even higher-ups. Employees know the day-to-day operations best after all – they might just be the source of your next great breakthrough.</h5>
-                        <Button variant="contained" style={{ backgroundColor: '#5CE7ED', color: 'black' }}>
-                            Need Counselling?
-                        </Button>
+                        <NavLink style={{ textDecoration: 'none' }} to="/contact">
+                            <Button variant="contained" style={{ backgroundColor: '#5CE7ED', color: 'black' }}>
+                                Need Counselling?
+                            </Button>
+                        </NavLink>
                     </Col>
 
                     <Col className="accr-style mt-5">

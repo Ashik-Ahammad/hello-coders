@@ -66,11 +66,6 @@ body {
     color: #ffffff;
 }
 
-.apple {
-    background-color: #424041;
-    color: #ffffff;
-}
-
 .footer-alt {
     color: #acacac;
 }
@@ -99,4 +94,21 @@ body {
 
 .icon1:hover{
     transform: translateY(-15px);
+}
+
+
+.youtube-style{
+    
+    color: white;
+    background-color:red;
+}
+
+.mail-style{
+    color: blue;
+    background-color: greenyellow;
+}
+
+.linked-style{
+    color:white;
+    background-color:#0A66C2 ;
 }

@@ -27,7 +27,7 @@ const Contact = () => {
                                 </p>
                             </div>
                             <div className="bg-dsgn py-3 mb-2">
-                                <p className="text-danger"><a href="/contact"><i class="fas fa-phone-alt text-white"></i></a> <small className="text-black"> +8801621869524</small><span> (9AM - 8PM)</span></p>
+                                <p className="text-danger"><a href="/contact"><i class="fas fa-phone-alt text-white"></i></a> <small className="text-black"> +8801981-337-121</small><span> (9AM - 8PM)</span></p>
                             </div>
 
                             <div className="bg-dsgn py-3 mb-2">

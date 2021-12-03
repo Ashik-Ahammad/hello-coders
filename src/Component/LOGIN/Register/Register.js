@@ -83,7 +83,7 @@ const Register = () => {
                         </NavLink>
                     </form>}
                     {isLoading && <CircularProgress />
-                    }{user?.email && <Alert severity="success">Congrats Successfully Registered</Alert>}
+                    }{user?.email && <Alert severity="success">Congrats Successfully Registered. WElCOME!!!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>

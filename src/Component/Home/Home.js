@@ -52,7 +52,7 @@ const Home = () => {
 
             <div data-aos="zoom-in-down">
 
-                <Typography sx={{ fontWeight: 600, m: 3 }} variant="h4" component="div">
+                <Typography sx={{ fontWeight: 600, fontFamily: 'monospace', m: 3 }} variant="h5" component="div">
                     SERVICE WE PROVIDE FOR YOU
                 </Typography>
             </div>
@@ -72,8 +72,8 @@ const Home = () => {
 
                     <div data-aos="fade-down-right">
 
-                        <Typography sx={{ fontWeight: 600, m: 3 }} variant="h5" component="div">
-                            Our Premium Courses
+                        <Typography sx={{ fontWeight: 600, m: 3, color: 'goldenRod', fontFamily: 'revert' }} variant="h5" component="div">
+                            OUR PREMIUM COURSES
                         </Typography>
                     </div>
                     <hr />
