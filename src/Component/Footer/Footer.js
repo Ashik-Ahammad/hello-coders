@@ -37,7 +37,7 @@ const Footer = () => {
                                 <ul class="list-unstyled footer-link mt-4">
                                     <li><a href="/register">Sign Up </a></li>
                                     <li><a href="/login">Login</a></li>
-                                    <li><a href="#" target="_blank" rel="noreferrer">Terms of Services</a></li>
+                                    <li><a href="/home" target="_blank" rel="noreferrer">Back to home</a></li>
                                     <li><a href="#" target="_blank" rel="noreferrer">Privacy Policy</a></li>
                                 </ul>
                             </div>

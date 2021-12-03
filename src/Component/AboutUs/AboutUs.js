@@ -1,9 +1,12 @@
 import React from 'react';
 import { Accordion, Col, Container, Row, Table } from 'react-bootstrap';
-import { Button } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import './AboutUs.css';
 import image3 from '../../images/imgg3.jpg'
 import image5 from '../../images/img5.jpg'
+import icon1 from '../../images/1.png';
+import icon2 from '../../images/2.png';
+import icon3 from '../../images/3.png';
 
 const AboutUs = () => {
     return (
@@ -101,6 +104,21 @@ const AboutUs = () => {
                         </Accordion>
                     </Col>
                 </Row>
+            </Container>
+
+            <Container>
+                <Grid item xs={4} sm={8} md={12} style={{ marginTop: '20px', }}>
+                    <div>
+                        <img src={icon1} alt="" width="200px" style={{ margin: '10px', }} /> <br />
+                        FOUNDER
+                    </div>
+                    <span>
+                        <img src={icon2} alt="" width="200px" style={{ margin: '10px', }} />
+                    </span>
+                    <span>
+                        <img src={icon3} alt="" width="200px" style={{ margin: '10px', }} />
+                    </span>
+                </Grid>
             </Container>
         </div>
     );

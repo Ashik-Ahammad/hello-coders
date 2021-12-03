@@ -1,8 +1,37 @@
-import React from 'react';
-import { Button, Container, Grid, TextField, Typography } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
+import loginImg from '../../../images/login.jpg';
+import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
+    const [loginData, setLoginData] = useState({});
+    const { user, loginUser, isLoading, authError, sigInWithGoogle } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+
+
+    const handleLoginSubmit = e => {
+        loginUser(loginData.email, loginData.password, location, history);
+
+        e.preventDefault();
+    }
+
+    const handleOnBlur = e => {
+        const field = e.target.name;
+        const value = e.target.value;
+
+        const newLoginData = { ...loginData };
+        newLoginData[field] = value;
+        setLoginData(newLoginData);
+    }
+
+    const handleGoogleSignIn = () => {
+        sigInWithGoogle(location, history)
+    }
+
+
     return (
         <Container >
             <Grid container spacing={2} sx={{ py: 25 }}>
@@ -11,19 +40,19 @@ const Login = () => {
                         <i class="fas fa-user-circle"></i>  Login
                     </Typography>
 
-                    <Button sx={{ width: '62%', m: 1, color: 'navy', background: "white" }} type="submit" variant="contained" >
+                    <Button onClick={handleGoogleSignIn} sx={{ width: '62%', m: 1, color: 'navy', background: "white" }} type="submit" variant="contained" >
                         <i class="fab fa-google"></i>&nbsp;  SIGN IN WITH GOOGLE
                     </Button>
 
                     <Typography sx={{ color: 'navy' }}>OR</Typography>
 
-                    <form onSubmit="">
+                    <form onSubmit={handleLoginSubmit}>
 
                         <TextField
                             sx={{ width: '62%', m: 1 }}
                             id="standard-basic" label="Email"
                             name="email"
-                            onBlur=""
+                            onBlur={handleOnBlur}
                             required
                             variant="standard" />
                         <br />
@@ -33,7 +62,7 @@ const Login = () => {
                             label="Password"
                             type="password"
                             name="password"
-                            onBlur=""
+                            onBlur={handleOnBlur}
                             autoComplete="current-password"
                             variant="standard"
                             required
@@ -50,6 +79,13 @@ const Login = () => {
                         </NavLink>
 
                     </form>
+                    {isLoading && <CircularProgress />
+                    }{user?.email && <Alert severity="success">Congrats Successfully Log in</Alert>}
+                    {authError && <Alert severity="error">{authError}</Alert>
+                    }
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img style={{ marginTop: '' }} src={loginImg} alt="" />
                 </Grid>
             </Grid>
         </Container>

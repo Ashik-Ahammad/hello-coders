@@ -20,7 +20,7 @@ h1 span {
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-  animation: bounce 0.3s infinite alternate;
+  animation: bounce 0.9s infinite alternate;
 }
 @keyframes bounce {
   100% {
@@ -59,6 +59,9 @@ h1 span:nth-child(10) {
 }
 h1 span:nth-child(11) {
   animation-delay: 0.8s;
+}
+h1 span:nth-child(12) {
+  animation-delay: 0.9s;
 }
 
 
