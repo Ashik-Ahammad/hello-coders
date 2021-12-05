@@ -85,7 +85,7 @@ const Login = () => {
                     }
                 </Grid>
                 <Grid item xs={12} md={6} >
-                    <img style={{ marginTop: '' }} src={loginImg} alt="" />
+                    <img className="img-fluid" style={{ marginTop: '' }} src={loginImg} alt="" />
                 </Grid>
             </Grid>
         </Container>

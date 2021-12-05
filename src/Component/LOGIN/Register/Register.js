@@ -87,7 +87,7 @@ const Register = () => {
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ marginTop: '' }} src={signImg} alt="" />
+                    <img className="img-fluid" style={{ marginTop: '' }} src={signImg} alt="" />
                 </Grid>
             </Grid>
         </Container>

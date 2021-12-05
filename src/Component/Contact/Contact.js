@@ -58,9 +58,9 @@ const Contact = () => {
 
             <Grid container spacing={3} >
 
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} container >
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4371018139136!2d90.2181580153646!3d23.909571288593096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637403641925!5m2!1sen!2sbd" width="480" height="300" className="border border-3 border-success rounded-3 mt-4" allowfullscreen="" loading="lazy" title="gmapHC"></iframe>
+                    <iframe style={{ margin: '30px' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4371018139136!2d90.2181580153646!3d23.909571288593096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637403641925!5m2!1sen!2sbd" width="480" height="300" className="border border-3 border-success rounded-3 mt-5 fluid" allowfullscreen="" loading="lazy" title="gmapHC"></iframe>
                 </Grid>
 
                 <Grid item xs={12} md={6}>

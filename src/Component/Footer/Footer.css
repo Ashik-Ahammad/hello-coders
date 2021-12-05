@@ -54,15 +54,7 @@ body {
     color: #ffffff;
 }
 
-.twitter {
-    background-color: #55acee;
-    color: #ffffff;
-}
 
-.google {
-    background-color: #d6492f;
-    color: #ffffff;
-}
 
 .footer-alt {
     color: #acacac;
@@ -102,8 +94,8 @@ body {
 }
 
 .mail-style{
-    color: blue;
-    background-color: greenyellow;
+    color: white;
+    background-color:navy;
 }
 
 .linked-style{

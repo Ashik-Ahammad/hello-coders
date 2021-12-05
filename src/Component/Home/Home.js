@@ -55,7 +55,7 @@ const Home = () => {
             <div data-aos="zoom-in-down">
 
                 <Typography sx={{ fontWeight: 600, fontFamily: 'monospace', m: 3 }} variant="h5" component="div">
-                    SERVICE WE PROVIDE FOR YOU
+                    SERVICE WE PROVIDE FOR YOU <i class="fas fa-hands text-info"></i>
                 </Typography>
             </div>
 
