@@ -20,7 +20,7 @@ const Header = () => {
                 <Navbar variant="dark" sticky="top" collapseOnSelect expand="lg" >
                     <Container>
                         <Navbar.Brand href="/"><img width="300px" height="80px" src={logo} alt="" /></Navbar.Brand>
-                        <Navbar.Toggle className="bg-secondary" />
+                        <Navbar.Toggle className=" toggle-color" />
                         <Navbar.Collapse className="justify-content-end">
                             <Nav.Link className="nav-style" as={HashLink} to="/home">HOME</Nav.Link>
                             <Nav.Link className="nav-style" as={HashLink} to="/services">SERVICES</Nav.Link>
