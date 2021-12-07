@@ -22,13 +22,13 @@ const Member = ({ member }) => {
                     alt=""
                 />
                 <CardContent>
-                    <Typography variant="h5" component="div">
+                    <Typography sx={{ color: 'blue', backgroundColor: '#d1c4e9', margin: '2px' }} variant="h5" component="div">
                         {name}
                     </Typography>
-                    <Typography variant="h6" sx={{ color: 'info.main' }} component="div">
+                    <Typography variant="h6" sx={{ color: 'info.main', backgroundColor: '#b39ddb', margin: '2px' }} component="div">
                         {position}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.secondary" sx={{ backgroundColor: '#9575cd', margin: '2px' }}>
                         {description}
                     </Typography>
 

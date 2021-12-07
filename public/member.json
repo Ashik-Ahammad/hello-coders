@@ -9,28 +9,28 @@
     {
         "id": 2,
         "name": "Nazmul Hossain Sunny",
-        "position": "Member",
+        "position": "Executive Member",
         "description": "Expert",
         "img": "https://i.ibb.co/CvM95kg/1077012.png"
     },
     {
         "id": 3,
         "name": "Sifat B. Solaiman",
-        "position": "Member",
+        "position": "Executive Member",
         "description": "C & JAVA Expert",
         "img": "https://i.ibb.co/CvM95kg/1077012.png"
     },
     {
         "id": 4,
         "name": "Saadman Rahman",
-        "position": "Member",
+        "position": "Executive Member",
         "description": "JAVA Expert & Professional",
         "img": "https://i.ibb.co/CvM95kg/1077012.png"
     },
     {
         "id": 5,
         "name": "Ashik Ahammad",
-        "position": "Member",
+        "position": "Executive Member",
         "description": "MERN STACK DEVELOPER",
         "img": "https://i.ibb.co/CvM95kg/1077012.png"
     }
