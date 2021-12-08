@@ -2,6 +2,7 @@ import React from 'react';
 import './Body.css';
 import banner from '../../../images/banner.jpg'
 import { Grid } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -36,7 +37,9 @@ const Body = (props) => {
                                 </div>
                                 <p className="mt-3">Hello Coders for all kind of software solution.</p>
                                 <div class="d-grid gap-2 col-6 mx-auto" data-aos="flip-down">
-                                    <button class="btn mt-3 btn-outline-secondary" type="button">Learn More</button>
+                                    <NavLink to="/learnmore">
+                                        <button class="btn mt-3 btn-outline-secondary w-100" type="button">Learn More</button>
+                                    </NavLink>
                                 </div>
 
                             </div>

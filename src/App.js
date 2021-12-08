@@ -12,6 +12,7 @@ import Login from './Component/LOGIN/Login/Login';
 import Register from './Component/LOGIN/Register/Register';
 import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './Component/LOGIN/PrivateRoute/PrivateRoute';
+import Learnmore from './Component/Pages/Learnmore/Learnmore';
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/learnmore">
+              <Learnmore></Learnmore>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
