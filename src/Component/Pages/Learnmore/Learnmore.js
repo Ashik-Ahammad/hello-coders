@@ -5,12 +5,12 @@ import moreImg from '../../../images/more.jpg';
 const Learnmore = () => {
     return (
         <div>
-            <img className="img-fluid my-5" src={moreImg} alt="" />
+            <img className="img-fluid mt-5" src={moreImg} alt="" />
 
             <Grid container spacing={3} style={{ padding: '20px' }}>
 
                 <Grid item xs={12} md={6}>
-                    <img className="img-fluid" src="https://i.ibb.co/nQwB0wz/isometric-job-search-recruitment-color-background-with-editable-text-learn-more-button-people-applic.png" alt="" />
+                    <img className="img-fluid mt-5" src="https://i.ibb.co/nQwB0wz/isometric-job-search-recruitment-color-background-with-editable-text-learn-more-button-people-applic.png" alt="" />
                 </Grid>
                 <Grid item xs={12} md={6} >
                     <h4>Hello Coders ?</h4>
