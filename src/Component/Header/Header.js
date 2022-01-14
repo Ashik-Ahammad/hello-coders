@@ -35,7 +35,7 @@ const Header = () => {
                                     :
 
                                     <NavLink style={{ textDecoration: 'none' }} to="/login">
-                                        <Button sx={{ color: 'navy' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
+                                        <Button sx={{ color: 'navy' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
                                     </NavLink>
                             }
 

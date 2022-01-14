@@ -6,6 +6,7 @@
 
 .nav-style{
    color: #2193B0;
+   font-weight: bold;
    font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-style:hover{
