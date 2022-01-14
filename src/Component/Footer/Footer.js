@@ -48,7 +48,7 @@ const Footer = () => {
                             <div class="">
                                 <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
                                 <p class="contact-info mt-4">  Contact us if need help with anything</p>
-                                <p class="contact-info"> <i class="fas fa-phone-square-alt text-info p-1"></i> <span className="text-white">+8801981-337-121</span></p>
+                                <p class="contact-info"> <i class="fas fa-phone-square-alt text-info p-1"></i> <span className="text-white">+8801307-450-464</span></p>
                                 <div class="mt-5">
                                     <ul class="list-inline">
                                         <li class="list-inline-item icon1">
@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div class="text-center mt-5">
-                    <p class="footer-alt mb-0 f-14">2021 <span className="text-warning">©</span> <span className="text-danger">Hello Coders BD</span> , All Rights Reserved</p>
+                    <p class="footer-alt mb-0 f-14">2022 <span className="text-warning">©</span> <span className="text-danger">Hello Coders BD</span> , All Rights Reserved</p>
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
 import { Grid } from '@mui/material';
 import React from 'react';
 import moreImg from '../../../images/more.jpg';
+import './Learnmore.css';
 
 const Learnmore = () => {
     return (
-        <div>
-            <img className="img-fluid mt-5" src={moreImg} alt="" />
+        <div className='marginL'>
+            <img className="img-fluid " src={moreImg} alt="" />
 
             <Grid container spacing={3} style={{ padding: '20px' }}>
 

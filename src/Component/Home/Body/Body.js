@@ -11,7 +11,7 @@ const Body = (props) => {
 
     return (
         <div>
-            <section className="bg-design mt-5 mb-5">
+            <section className="bg-design mb-5 margin">
                 <Grid container spacing={3} style={{ marginTop: '15px', marginBottom: '20px' }} >
 
                     <Grid item xs={12} md={6}>
