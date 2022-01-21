@@ -7,7 +7,7 @@ import './Services.css';
 const Services = () => {
     const [date, setDate] = React.useState(new Date());
     return (
-        <div>
+        <div className='margin'>
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>

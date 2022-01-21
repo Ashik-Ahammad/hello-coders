@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
 
-.bg-of-nav{
-    background-color:#A3E4DB;
-}
+
 
 .nav-style{
-   color: #2193B0;
+   color: red;
    font-weight: bold;
    font-family: 'Roboto Condensed', sans-serif;
 }
@@ -16,4 +14,12 @@
 
 .toggle-color{
     background-color: #2193b05b;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar.active {
+    background:whitesmoke;
 }

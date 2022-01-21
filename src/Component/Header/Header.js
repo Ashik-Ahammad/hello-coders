@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar, } from 'react-bootstrap';
 import logo from '../../images/logo.png';
 import { HashLink } from 'react-router-hash-link';
@@ -12,12 +12,23 @@ import useAuth from '../../Hooks/useAuth';
 const Header = () => {
 
     const { user, logOut } = useAuth();
+    const[navbar,setNavbar] = useState(false);
 
+    const changeBackground = () => {
+        if(window.scrollY >= 80){
+            setNavbar(true)
+        }
+        else{
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll',changeBackground);
 
     return (
         <div>
             <>
-                <Navbar variant="dark" fixed="top" collapseOnSelect expand="lg" className='bg-of-nav' >
+                <Navbar variant="dark" fixed="top" collapseOnSelect expand="lg" className={navbar ? 'navbar active' : 'navbar'} >
                     <Container>
                         <Navbar.Brand href="/"><img width="300px" height="80px" src={logo} alt="" /></Navbar.Brand>
                         <Navbar.Toggle className=" toggle-color" />
@@ -30,12 +41,12 @@ const Header = () => {
                             {
                                 user?.email ?
 
-                                    <Button onClick={logOut} sx={{ color: 'navy' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
+                                    <Button onClick={logOut} sx={{ color: 'red' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
 
                                     :
 
                                     <NavLink style={{ textDecoration: 'none' }} to="/login">
-                                        <Button sx={{ color: 'navy' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
+                                        <Button sx={{ color: 'red' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
                                     </NavLink>
                             }
 

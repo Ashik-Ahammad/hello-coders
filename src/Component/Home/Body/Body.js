@@ -26,7 +26,7 @@ const Body = (props) => {
 
                                 <Typewriter
                                 words={['Hello Coders']}
-                                loop={10}
+                                loop={100}
                                 cursor
                                 cursorStyle='|'
                                 typeSpeed={90}
@@ -36,7 +36,7 @@ const Body = (props) => {
                                 </span>
        
                                 </div>
-                                <p className="mt-3">Hello Coders for all kind of software solution.</p>
+                                <p className="mt-3">Hello Coders smart software solution.</p>
                                 <div class="d-grid gap-2 col-6 mx-auto" data-aos="flip-down">
                                     <NavLink to="/learnmore">
                                         <button class="btn mt-3 btn-outline-secondary w-100" type="button">Learn More</button>
