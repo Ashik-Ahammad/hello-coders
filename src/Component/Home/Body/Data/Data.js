@@ -1,12 +1,11 @@
 import React from 'react';
-import './Data.css'
+import './Data.css';
+import { NavLink } from 'react-router-dom';
 
 
 
 const Data = ({ services }) => {
     const { id, name, img, description } = services;
-
-
 
     return (
         <>
@@ -27,7 +26,10 @@ const Data = ({ services }) => {
                             <p className="card-text">{description}</p>
                             <div data-aos="zoom-in">
 
-                                <button type="button" class="btn btn-info btn-style">More Details</button></div>
+                             <NavLink to="/moredetails" target="_blank" rel="noreferrer">
+                                <button type="button" class="btn btn-info btn-style">More Details</button>
+                             </NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

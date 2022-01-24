@@ -40,7 +40,7 @@ const Login = () => {
                         <i class="fas fa-user-circle"></i>  Login
                     </Typography>
 
-                    <Button onClick={handleGoogleSignIn} sx={{ width: '62%', m: 1, color: 'navy', background: "white" }} type="submit" variant="contained" >
+                    <Button onClick={handleGoogleSignIn} sx={{ width: '62%', m: 1, color: 'white', background: "#34A853" }} type="submit" variant="contained" >
                         <i class="fab fa-google"></i>&nbsp;  SIGN IN WITH GOOGLE
                     </Button>
 

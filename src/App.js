@@ -13,6 +13,7 @@ import Register from './Component/LOGIN/Register/Register';
 import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './Component/LOGIN/PrivateRoute/PrivateRoute';
 import Learnmore from './Component/Pages/Learnmore/Learnmore';
+import MoreDetails from './Component/Pages/AllService/ServicePageDetails/MoreDetails';
 
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
             </Route>
             <Route path="/learnmore">
               <Learnmore></Learnmore>
+            </Route>
+            <Route path="/moredetails">
+              <MoreDetails></MoreDetails>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

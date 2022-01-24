@@ -14,7 +14,7 @@ const Courses = (props) => {
     const { name, description, img } = props.courses;
     return (
 
-
+        
         <Grid item xs={4} sm={4} md={4}>
             <>
                 <Placeholder as="p" animation="glow">

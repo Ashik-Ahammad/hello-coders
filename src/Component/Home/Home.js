@@ -9,12 +9,8 @@ import Grid from '@mui/material/Grid';
 import { Container, Typography } from '@mui/material';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-
-
-
-import './Home.css'
+import './Home.css';
 import Courses from './Body/Courses/Courses';
-import Blog from './Blog/Blog';
 import Chat from '../Chat/Chat';
 
 
@@ -91,7 +87,7 @@ const Home = () => {
                 </Container>
             </Box>
 
-            <Blog></Blog>
+            
             <Slider></Slider>
             <Chat></Chat>
 

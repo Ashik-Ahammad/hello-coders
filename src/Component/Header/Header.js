@@ -41,6 +41,8 @@ const Header = () => {
                             {
                                 user?.email ?
 
+                                
+                                
                                     <Button onClick={logOut} sx={{ color: 'red' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
 
                                     :

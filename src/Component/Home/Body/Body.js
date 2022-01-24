@@ -25,7 +25,7 @@ const Body = (props) => {
                                 <span style={{ color: '#2293B0', fontWeight: 'bold',fontSize:'50px' }}>
 
                                 <Typewriter
-                                words={['Hello Coders']}
+                                words={['Hello Coders...']}
                                 loop={100}
                                 cursor
                                 cursorStyle='|'
@@ -36,10 +36,10 @@ const Body = (props) => {
                                 </span>
        
                                 </div>
-                                <p className="mt-3">Hello Coders smart software solution.</p>
+                                <p className="mt-3">Hello Coders Smart Software Solution.</p>
                                 <div class="d-grid gap-2 col-6 mx-auto" data-aos="flip-down">
                                     <NavLink to="/learnmore">
-                                        <button class="btn mt-3 btn-outline-secondary w-100" type="button">Learn More</button>
+                                        <button class="btn mt-3   btn-outline-success w-100" type="button">Learn More</button>
                                     </NavLink>
                                 </div>
 

@@ -5,16 +5,18 @@
         "description": "A programming language is a computer language that is used by programmers (developers) to communicate with computers. It is a set of instructions written in any specific language ( C, C++, Java, Python) to perform a specific task.",
         "img": "https://i.ibb.co/rd9ByXy/1539188.png"
     },
+   
     {
         "id": 102,
-        "name": "Software Solution",
-        "description": "We have software development teams who helps our clients, from the early stages to whatever they aspire to be. Our expertise includes front-end, backend, database, and server solutions for mobile, web, and desktop applications. ",
-        "img": "https://i.ibb.co/XSq5k4x/3098128.png"
-    },
-    {
-        "id": 103,
         "name": "Web Design & Development",
         "description": "Who are searching for both Web Design and Web Development service you are welcome to us. Nowadays web applications are in the highest Highest Demand. Want to build website or have one call us.",
         "img": "https://i.ibb.co/xLKRJ9V/6291435.png"
+    },
+
+    {
+        "id": 103,
+        "name": "Software Solution",
+        "description": "We have software development teams who helps our clients, from the early stages to whatever they aspire to be. Our expertise includes front-end, backend, database, and server solutions for mobile, web, and desktop applications. ",
+        "img": "https://i.ibb.co/XSq5k4x/3098128.png"
     }
 ]
