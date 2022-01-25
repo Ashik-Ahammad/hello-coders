@@ -43,14 +43,16 @@ const Header = () => {
 
                                 
                                 
-                                    <Button onClick={logOut} sx={{ color: 'red' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
+                                    <Button onClick={logOut} sx={{ color: '#00A1C4' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
 
                                     :
 
                                     <NavLink style={{ textDecoration: 'none' }} to="/login">
-                                        <Button sx={{ color: 'red' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
+                                        <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</Button>
                                     </NavLink>
                             }
+
+                            <Nav.Link className="nav-style" as={HashLink} to="/orders"><i class="fas fa-cart-plus"></i></Nav.Link>
 
                         </Navbar.Collapse>
                     </Container>

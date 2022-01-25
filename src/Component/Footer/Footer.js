@@ -8,7 +8,9 @@ const Footer = () => {
 
     return (
         <div className="mt-5 pt-5">
-            <ScrollToTop  smooth color="green" background="blue"/>
+            
+            {/* Scroll button for going to top */}
+            <ScrollToTop  smooth color="red" />
             <div class="section bg-footer">
                 <div class="container">
                     <div class="row">

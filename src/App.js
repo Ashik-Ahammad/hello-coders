@@ -14,6 +14,8 @@ import AuthProvider from './Context/AuthProvider/AuthProvider';
 import PrivateRoute from './Component/LOGIN/PrivateRoute/PrivateRoute';
 import Learnmore from './Component/Pages/Learnmore/Learnmore';
 import MoreDetails from './Component/Pages/AllService/ServicePageDetails/MoreDetails';
+import OrderReview from './Component/Order/OrderReview';
+import PlaceOrder from './Component/PlaceOrder/PlaceOrder';
 
 
 function App() {
@@ -33,9 +35,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/services">
+            <Route path="/services">
               <Services></Services>
-            </PrivateRoute>
+            </Route>
             <Route path="/aboutus">
               <AboutUs></AboutUs>
             </Route>
@@ -54,6 +56,12 @@ function App() {
             <Route path="/moredetails">
               <MoreDetails></MoreDetails>
             </Route>
+            <PrivateRoute path="/orders">
+              <OrderReview></OrderReview>
+            </PrivateRoute>
+            <PrivateRoute path="/placeorder">
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

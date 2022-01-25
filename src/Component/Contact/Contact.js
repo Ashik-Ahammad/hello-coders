@@ -14,10 +14,10 @@ const Contact = () => {
                 <Container>
                     <Row >
                         <Col className="text-white mt-5">
-                            At Hello Coders BD, we develop innovative ideas that provide all application solution. Among a plethora of products and services, web design and development, E-commerce solutions, Business-to-Client applications, are a few that we offer.We also provide high-level language learning course Our business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions, and the best quality/price ratio found in the industry.
+                            At Hello Coders BD, we develop innovative ideas that provide all application solution. Among a plethora of products and services, web design and development, E-commerce solutions, Business-to-Client applications, are a few that we offer.We also provide high-level language learning course. Our business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions, and the best quality/price ratio found in the industry.
                         </Col>
 
-                        <Col >
+                        <Col className='mt-4'>
                             <h4 className="text-warning">Contact us for any information</h4>
 
                             <div className="bg-dsgn py-3 mb-2">

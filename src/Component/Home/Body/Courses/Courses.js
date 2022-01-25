@@ -10,8 +10,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 
 const Courses = (props) => {
-
-    const { name, description, img } = props.courses;
+    
+    const { name, description, img,price } = props.courses;
     return (
 
         
@@ -42,13 +42,19 @@ const Courses = (props) => {
                                 </Typography>
                             </div>
                             <Typography variant="body2" color="text.secondary">
-                                {description}
+                                {description}                       
+                            </Typography>
+
+                            <Typography variant="body2" color="error.main" sx={{fontSize:"20px", marginY:"5px"}} >
+                            BDT {price} 
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <div data-aos="flip-left">
-                            <Button size="small" color="warning">
+                        <div data-aos="zoom-in">
+                            <Button 
+                            onClick={() => props.handleAddToCart(props.courses)}
+                            size="small" color="warning">
                                 $ubscription
                             </Button>
                         </div>

@@ -12,12 +12,14 @@ import "aos/dist/aos.css";
 import './Home.css';
 import Courses from './Body/Courses/Courses';
 import Chat from '../Chat/Chat';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 
 
 
 const Home = () => {
 
     const [service, setService] = useState([]);
+    
 
     useEffect(() => {
         fetch('./services.json')
@@ -25,6 +27,7 @@ const Home = () => {
             .then(data => setService(data))
     }, [])
 
+    const [cart, setCart] = useState([]);
     const [course, setCourse] = useState([]);
 
     useEffect(() => {
@@ -35,7 +38,50 @@ const Home = () => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
-    }, [])
+    }, []);
+
+    useEffect(() => {
+    
+        if(course.length){
+
+        const savedCart = getStoredCart();
+        const storedCart = [];
+        for(const key in savedCart){
+            
+            const addedCourse = course.find(course => course.key === key);
+            if(addedCourse){
+                const quantity = savedCart[key];
+                addedCourse.quantity= quantity;
+                storedCart.push(addedCourse);
+            }
+            
+        }
+        setCart(storedCart);
+
+        }
+    },[course])
+
+
+
+    const handleAddToCart = (courses) => {
+        const exists = cart.find(crs => crs.key === courses.key);
+        let newCart = [];
+        if(exists){
+            const rest = cart.filter(crs => crs.key !== courses.key);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest,courses];
+        }
+        else{
+            courses.quantity = 1;
+            newCart = [...cart,courses];
+        }
+
+        setCart(newCart);
+        // (save to local storage)
+        addToDb(courses.key);
+        alert('Course added to the cart');
+    }
+
 
     return (
         <div className="container">
@@ -79,11 +125,13 @@ const Home = () => {
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         {
                             course.map(courses => <Courses
-                                key={courses.id}
+                                key={courses.key}
                                 courses={courses}
+                                handleAddToCart={handleAddToCart}
                             ></Courses>)
                         }
                     </Grid>
+                    
                 </Container>
             </Box>
 

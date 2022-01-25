@@ -40,7 +40,7 @@ const MoreDetails = () => {
 
         <Grid container sx={{ py: 5,  }} spacing={2}>    
                 <Grid item xs={12} md={6}>
-                <h2>Software solution</h2>
+                <h2>Software Solution</h2>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/tPhrgRL/md5.png" alt="" />
                 </Grid>
                 <Grid item xs={12} md={6}>
