@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react"
 
 const useCourses = () => {
+    // custom hook
     const [courses,setCourses] = useState([]);
     useEffect(()=>{
         fetch('https://frozen-forest-00333.herokuapp.com/courses')
