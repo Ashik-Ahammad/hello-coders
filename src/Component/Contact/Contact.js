@@ -67,6 +67,7 @@ const Contact = () => {
                     <Typography style={{ marginBottom: '5PX', color: 'blue', marginTop: '20px' }}>
                         SEND FEEDBACK
                     </Typography>
+                    
                     <form style={{ color: 'white' }}>
                         <TextField
                             sx={{ mx: 1, width: '30%', color: 'primary.main' }}

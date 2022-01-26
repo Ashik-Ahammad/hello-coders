@@ -79,7 +79,7 @@ const Home = () => {
         setCart(newCart);
         // (save to local storage)
         addToDb(courses.key);
-        alert('Course added to the cart');
+        alert('Course added to the cart, to checkout go to cart!');
     }
 
 

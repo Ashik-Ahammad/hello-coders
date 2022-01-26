@@ -1,12 +1,12 @@
 import React from 'react';
-import { Placeholder } from 'react-bootstrap';
+import { Button, Placeholder } from 'react-bootstrap';
 import './Courses.css'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 
 
 const Courses = (props) => {
@@ -52,10 +52,10 @@ const Courses = (props) => {
                     </CardActionArea>
                     <CardActions>
                         <div data-aos="zoom-in">
-                            <Button 
+                            <Button
                             onClick={() => props.handleAddToCart(props.courses)}
-                            size="small" color="warning">
-                                $ubscription
+                            size="small" className=''variant="outline-warning">
+                                $UBSCRIPTION
                             </Button>
                         </div>
                     </CardActions>

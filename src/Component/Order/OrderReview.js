@@ -22,9 +22,10 @@ const OrderReview = () => {
     };
 
     const handlePlaceOrder = () => {
-        history.push('/placeorder');
-        setCart([]);
-        clearTheCart();
+        history.push('/shipping');
+        // setCart([]);
+        // clearTheCart();
+        alert('Make sure your list before proceeding!!!')
     }
 
     return (
@@ -49,7 +50,7 @@ const OrderReview = () => {
                         ></ReviewItem>)
                 }
 
-                <Button onClick={handlePlaceOrder} className='my-2 px-5' variant="primary" size="lg">Place Order</Button>
+                <Button onClick={handlePlaceOrder} className='my-2 px-5' variant="primary" size="lg">Proceed to shipping...</Button>
               </div>
 
               

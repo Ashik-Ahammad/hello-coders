@@ -16,6 +16,7 @@ import Learnmore from './Component/Pages/Learnmore/Learnmore';
 import MoreDetails from './Component/Pages/AllService/ServicePageDetails/MoreDetails';
 import OrderReview from './Component/Order/OrderReview';
 import PlaceOrder from './Component/PlaceOrder/PlaceOrder';
+import Shipping from './Component/Shipping/Shipping';
 
 
 function App() {
@@ -56,8 +57,11 @@ function App() {
             <Route path="/moredetails">
               <MoreDetails></MoreDetails>
             </Route>
-            <PrivateRoute path="/orders">
+            <Route path="/orders">
               <OrderReview></OrderReview>
+            </Route>
+            <PrivateRoute path="/shipping">
+              <Shipping></Shipping>
             </PrivateRoute>
             <PrivateRoute path="/placeorder">
               <PlaceOrder></PlaceOrder>
