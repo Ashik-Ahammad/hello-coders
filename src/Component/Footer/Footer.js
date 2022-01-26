@@ -65,10 +65,10 @@ const Footer = () => {
                                             </a>
                                         </li>
 
-                                        <li class="list-inline-item icon1"><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i class="fab youtube footer-social-icon fa-youtube youtube-style"></i></a></li>
+                                        <li class="list-inline-item icon1"><a href="https://www.youtube.com/channel/UCSvUPIkliUV_v8cPMIknACg" target="_blank" rel="noreferrer"><i class="fab youtube footer-social-icon fa-youtube youtube-style"></i></a></li>
 
                                         <li class="list-inline-item icon1">
-                                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                                            <a href="https://www.linkedin.com/in/hello-coders-38ba3522b/" target="_blank" rel="noreferrer">
                                                 <i class="fab linkedin footer-social-icon fa-linkedin linked-style"></i>
                                             </a>
                                         </li>

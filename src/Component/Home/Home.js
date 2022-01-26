@@ -22,7 +22,7 @@ const Home = () => {
     
 
     useEffect(() => {
-        fetch('./services.json')
+        fetch('https://frozen-forest-00333.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
@@ -31,7 +31,7 @@ const Home = () => {
     const [course, setCourse] = useState([]);
 
     useEffect(() => {
-        fetch('./courses.json')
+        fetch('https://frozen-forest-00333.herokuapp.com/courses')
             .then(res => res.json())
             .then(data => setCourse(data))
     }, [])
