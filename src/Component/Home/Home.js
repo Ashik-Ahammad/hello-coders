@@ -13,7 +13,7 @@ import './Home.css';
 import Courses from './Body/Courses/Courses';
 import Chat from '../Chat/Chat';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
-
+import LinearProgress from '@mui/material/LinearProgress';
 
 
 const Home = () => {
@@ -102,8 +102,17 @@ const Home = () => {
                 </Typography>
             </div>
 
+            
 
-            <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-5 ">
+
+            {
+                service.length === 0 ? <Box sx={{ width: '100%' }}>
+                <LinearProgress />
+              </Box>
+
+              :
+
+                <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-5 ">
                 {
                     service.map(services => <Data
                         key={services.id}
@@ -111,6 +120,7 @@ const Home = () => {
                     ></Data>)
                 }
             </div>
+            }
 
             <Box sx={{ flexGrow: 1 }}>
                 <Container>
@@ -122,7 +132,14 @@ const Home = () => {
                         </Typography>
                     </div>
                     <hr />
-                    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    {
+                        course.length === 0 ? <Box sx={{ width: '100%' }}>
+                        <LinearProgress />
+                      </Box>
+
+                        :
+
+                        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         {
                             course.map(courses => <Courses
                                 key={courses.key}
@@ -131,6 +148,7 @@ const Home = () => {
                             ></Courses>)
                         }
                     </Grid>
+                    }
                     
                 </Container>
             </Box>

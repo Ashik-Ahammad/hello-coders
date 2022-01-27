@@ -12,7 +12,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
         
-        fetch('http://localhost:5000/orders', {
+        fetch('https://frozen-forest-00333.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -42,7 +42,9 @@ const Shipping = () => {
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="City" defaultValue="" {...register("city")} required/>
 
-                <input style={{border:'1px solid #0FA6C7 '}} placeholder="Phone" defaultValue="" {...register("phone")} required/>
+                <input style={{border:'1px solid #0FA6C7 '}} placeholder="bkash No." defaultValue="" {...register("phone")} required/>
+
+                <input style={{border:'1px solid #0FA6C7 '}} placeholder="TrxID" defaultValue="" {...register("text")} required/>
 
                 <input style={{backgroundColor:'#0FA6C7',color:'white', border:'1px solid #0FA6C7 '}} type="submit" value="Confirm Order"/>
             </form>
