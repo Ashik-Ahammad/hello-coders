@@ -1,11 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import './Contact.css';
 
+
 const Contact = () => {
+
+    const [feedback,setFeedback] = useState({}); 
+
+    const handleOnBlur = e => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newInfo = {...feedback};
+        newInfo[field] = value;
+        setFeedback(newInfo);
+        console.log(newInfo)
+    }
+
+    const handleFeedbackSubmit = e => {
+
+        // collect data
+        const feedbacks = {
+            ...feedback
+        }
+
+        // send to the server
+        fetch('https://frozen-forest-00333.herokuapp.com/feedbacks',{
+            method: 'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body: JSON.stringify(feedbacks)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        })
+
+
+        e.preventDefault();
+    }
+
     return (
+
         <div>
             <div class="context">
                 <h1 className="mb-5">HELLO CODERS BANGLADESH</h1>
@@ -68,7 +106,7 @@ const Contact = () => {
                         SEND FEEDBACK
                     </Typography>
                     
-                    <form style={{ color: 'white' }}>
+                    <form onSubmit={handleFeedbackSubmit} style={{ color: 'white' }}>
                         <TextField
                             sx={{ mx: 1, width: '30%', color: 'primary.main' }}
                             id="outlined-multiline-flexible"
@@ -78,6 +116,7 @@ const Contact = () => {
                             multiline
                             required
                             maxRows={4}
+                            onBlur={handleOnBlur}
 
                         />
                         <TextField
@@ -89,7 +128,7 @@ const Contact = () => {
                             multiline
                             required
                             maxRows={4}
-
+                            onBlur={handleOnBlur}
                         />
                         <br />
                         <TextField
@@ -97,9 +136,10 @@ const Contact = () => {
                             id="outlined-multiline-flexible"
                             label="Subject"
                             type="text"
+                            name="subject"
                             multiline
                             maxRows={4}
-
+                            onBlur={handleOnBlur}
                         />
                         <br />
 
@@ -108,10 +148,12 @@ const Contact = () => {
                             id="outlined-multiline-static"
                             label="Message"
                             type="text"
+                            name="message"
                             multiline
                             rows={4}
-
+                            onBlur={handleOnBlur}    
                         />
+                        
                         <Button sx={{ width: '62%', m: 1, color: 'black', background: "transparent" }} type="submit" variant="contained" endIcon={<SendIcon />}>
                             SEND
                         </Button>

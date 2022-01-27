@@ -35,7 +35,7 @@ const Login = () => {
     return (
         <Container >
             <Grid container spacing={2} sx={{ py: 25 }}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} className='mt-5'>
                     <Typography variant="body1" color="navy" gutterBottom>
                         <i class="fas fa-user-circle"></i>  Login
                     </Typography>
@@ -85,7 +85,7 @@ const Login = () => {
                     }
                 </Grid>
                 <Grid item xs={12} md={6} >
-                    <img className="img-fluid" style={{ marginTop: '' }} src={loginImg} alt="" />
+                    <img className="img-fluid" style={{ marginTop: '-30px' }} src={loginImg} alt="" />
                 </Grid>
             </Grid>
         </Container>
