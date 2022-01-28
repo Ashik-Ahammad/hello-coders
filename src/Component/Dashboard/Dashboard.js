@@ -29,6 +29,7 @@ const drawerWidth = 200;
 function Dashboard(props) {
 
   let {path,url} = useRouteMatch();
+  const {admin} = useAuth();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   
@@ -58,9 +59,13 @@ function Dashboard(props) {
       <Divider />
 
       {/*Nested admin routes */}
-      <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-      <Link to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
-      <Link to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
+      {
+        admin && <Box>
+          <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
+          <Link to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
+          <Link to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
+        </Box>
+      }
 
     </div>
   );

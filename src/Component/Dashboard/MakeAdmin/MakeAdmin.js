@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 const MakeAdmin = () => {
 
     const [email, setEmail] = useState('');
-    const [success, setSuccess] = useState(false);
-    
 
     const handleOnBlur = e => {
         setEmail(e.target.value);
@@ -21,11 +19,14 @@ const MakeAdmin = () => {
        })
        .then(res => res.json())
        .then(data => {
-           console.log(data)
+           if(data.modifiedCount){
+               setEmail('');
+               
+           }
        })
-
+        alert('Admin added successfully!');
         e.preventDefault()
-        alert('Admin added successfully!')
+        
     }
 
     return (

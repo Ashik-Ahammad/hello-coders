@@ -7,9 +7,11 @@ import { getAuth, GoogleAuthProvider, createUserWithEmailAndPassword, signInWith
 initializeFirebase();
 
 const useFirebase = () => {
+
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
+    const [admin, setAdmin] = useState(false);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -90,6 +92,13 @@ const useFirebase = () => {
         return () => unsubscribe;
     }, [])
 
+    // make admin
+    useEffect(() => {
+        fetch(`https://frozen-forest-00333.herokuapp.com/users/${user.email}`)
+        .then(res => res.json())
+        .then(data => setAdmin(data.admin))
+    },[user.email])
+
     const logOut = () => {
 
         signOut(auth).then(() => {
@@ -113,13 +122,9 @@ const useFirebase = () => {
         .then()
     }
 
-
-
-
-
-
     return {
         user,
+        admin,
         isLoading,
         authError,
         registerUser,
