@@ -19,11 +19,20 @@ const useFirebase = () => {
     const registerUser = (name, email, password) => {
         setIsLoading(true);
 
-        createUserWithEmailAndPassword(auth, name, email, password)
+        createUserWithEmailAndPassword(auth, name,email, password)
             .then((userCredential) => {
                 setAuthError('');
                 const newUser = { email, displayName: name };
-
+                setUser(newUser);
+                // save user to the database
+                saveUser(email, name, 'POST');
+                // send name to firebase after creation
+                updateProfile(auth.currentUser, {
+                    displayName: name
+                }).then(() => {
+                }).catch((error) => {
+                });
+                
             })
             .catch((error) => {
                 setAuthError(error.message);
@@ -57,14 +66,13 @@ const useFirebase = () => {
             .then((result) => {
 
                 const user = result.user;
-
+                saveUser(user.email,user.displayName,'PUT');
                 setAuthError('');
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
 
             }).catch((error) => {
-
-                setAuthError(error.message);
+             setAuthError(error.message);
             }).finally(() => setIsLoading(false));
     }
 
@@ -91,6 +99,18 @@ const useFirebase = () => {
         })
             .finally(() => setIsLoading(false))
 
+    }
+
+    const saveUser = (email, displayName,method) => {
+        const user = {email,displayName};
+        fetch('https://frozen-forest-00333.herokuapp.com/users',{
+            method:method,
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(user)
+        })
+        .then()
     }
 
 

@@ -33,7 +33,7 @@ const Shipping = () => {
         <div className='shipping-container border border-2 mx-5'>
             
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
-                <h4 className='text-info'>Shipping details <i class="far fa-file-alt"></i></h4>
+                <h4 className='text-info'>Shopping details <i class="far fa-file-alt"></i></h4>
                 <input style={{border:'1px solid #0FA6C7 '}} defaultValue={user.displayName} {...register("name")} placeholder="Name" required/>
 
                 <input style={{border:'1px solid #0FA6C7 '}} defaultValue={user.email} {...register("email", { required: true })} placeholder="Email" required/>
@@ -44,7 +44,7 @@ const Shipping = () => {
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="bkash No." defaultValue="" {...register("phone")} required/>
 
-                <input style={{border:'1px solid #0FA6C7 '}} placeholder="TrxID" defaultValue="" {...register("text")} required/>
+                <input style={{border:'1px solid #0FA6C7 '}} placeholder="TrxID" defaultValue="" {...register("TrxID")} required/>
 
                 <input style={{backgroundColor:'#0FA6C7',color:'white', border:'1px solid #0FA6C7 '}} type="submit" value="Confirm Order"/>
             </form>

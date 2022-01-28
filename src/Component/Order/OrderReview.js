@@ -4,7 +4,7 @@ import useCart from '../../Hooks/useCart';
 import './OrderReview.css'
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
-import { clearTheCart, removeFromDb } from '../../utilities/fakedb';
+import { removeFromDb } from '../../utilities/fakedb';
 import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
@@ -45,6 +45,7 @@ const OrderReview = () => {
                 {
                     cart.map(course => <ReviewItem 
                         key={course.key}
+                        cName={course.cName}
                         course={course}
                         handleRemove={handleRemove}
                         ></ReviewItem>)

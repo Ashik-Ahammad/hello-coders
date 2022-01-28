@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import { Box } from '@mui/material';
 
 
 
@@ -37,13 +38,19 @@ const Header = () => {
                             <Nav.Link className="nav-style" as={HashLink} to="/services">SERVICES</Nav.Link>
                             <Nav.Link className="nav-style" as={HashLink} to="/aboutus">ABOUT US</Nav.Link>
                             <Nav.Link className="nav-style" as={HashLink} to="/contact">CONTACT</Nav.Link>
-
+                            <Nav.Link className="nav-style" as={HashLink} to="/orders"><i class="fas fa-cart-plus"></i></Nav.Link>
                             {
                                 user?.email ?
 
+                                    <Box>
+                                         <NavLink style={{ textDecoration: 'none' }} to="/dashboard-hellocoders">
+                                        <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-user-circle"></i></Button>
+                                        </NavLink>
+
+                                        <Button onClick={logOut} sx={{ color: '#00A1C4' }} className="uptext">Logout</Button>
+                                    </Box>
                                 
-                                
-                                    <Button onClick={logOut} sx={{ color: '#00A1C4' }} className="uptext"><i class="fas fa-sign-in-alt"></i>&nbsp; Logout</Button>
+                                    
 
                                     :
 
@@ -52,7 +59,7 @@ const Header = () => {
                                     </NavLink>
                             }
 
-                            <Nav.Link className="nav-style" as={HashLink} to="/orders"><i class="fas fa-cart-plus"></i></Nav.Link>
+                            
 
                         </Navbar.Collapse>
                     </Container>

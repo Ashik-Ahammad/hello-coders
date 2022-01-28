@@ -17,6 +17,7 @@ import MoreDetails from './Component/Pages/AllService/ServicePageDetails/MoreDet
 import OrderReview from './Component/Order/OrderReview';
 import PlaceOrder from './Component/PlaceOrder/PlaceOrder';
 import Shipping from './Component/Shipping/Shipping';
+import Dashboard from './Component/Dashboard/Dashboard';
 
 
 function App() {
@@ -60,6 +61,9 @@ function App() {
             <Route path="/orders">
               <OrderReview></OrderReview>
             </Route>
+            <PrivateRoute path="/dashboard-hellocoders">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
             <PrivateRoute path="/shipping">
               <Shipping></Shipping>
             </PrivateRoute>

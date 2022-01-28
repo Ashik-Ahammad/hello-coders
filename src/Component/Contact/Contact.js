@@ -4,7 +4,6 @@ import { Button, Grid, TextField, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import './Contact.css';
 
-
 const Contact = () => {
 
     const [feedback,setFeedback] = useState({}); 
@@ -35,10 +34,12 @@ const Contact = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            if(data.insertedId){
+                alert('Message sent!')
+            }
         })
 
-
+        
         e.preventDefault();
     }
 
