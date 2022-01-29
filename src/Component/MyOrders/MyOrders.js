@@ -15,7 +15,7 @@ const MyOrders = () => {
     const [orders,SetOrders] = useState([]);
 
     useEffect(() => {
-        const url = `https://frozen-forest-00333.herokuapp.com/orders?email=${user.email}`
+        const url = 'https://frozen-forest-00333.herokuapp.com/orders'
         fetch(url)
         .then(res => res.json())
         .then(data => SetOrders(data));
