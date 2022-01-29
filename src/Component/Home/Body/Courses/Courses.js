@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Placeholder } from 'react-bootstrap';
-import './Courses.css'
+import './Courses.css';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -11,7 +11,7 @@ import { CardActionArea, CardActions } from '@mui/material';
 
 const Courses = (props) => {
     
-    const { name: name, description, img,price } = props.courses;
+    const {name, description, img, price } = props.courses;
     return (
 
         
@@ -42,11 +42,11 @@ const Courses = (props) => {
                                 </Typography>
                             </div>
                             <Typography variant="body2" color="text.secondary">
-                                {description}                       
+                                    {description}                       
                             </Typography>
 
                             <Typography variant="body2" color="error.main" sx={{fontSize:"20px", marginY:"5px"}} >
-                            BDT {price} 
+                                    BDT {price} 
                             </Typography>
                         </CardContent>
                     </CardActionArea>

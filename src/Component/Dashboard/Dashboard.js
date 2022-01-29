@@ -44,7 +44,7 @@ function Dashboard(props) {
   const drawer = (
       
     <div>
-      <Toolbar className='bg-info'>
+      <Toolbar sx={{background:'#1976D2',height:'120px'}}>
       
       <img style={{ width: '90px',margin:'0 auto' }} src="https://i.ibb.co/Dpyx723/Kam-Logo-PNG.png" alt="" />
       
@@ -56,18 +56,18 @@ function Dashboard(props) {
         </span>
       </List>
 
-      <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to="/home"><Button color="inherit">Back To Home</Button></Link>
+      <Link style={{ textDecoration: 'none', color: 'blue', width: '100%' }} to="/home"><Button color="inherit">Back To Home</Button></Link>
 
-      <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
+      <Link style={{ textDecoration: 'none', color: 'blue', width: '100%' }} to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
 
       <Divider />
 
       {/*Nested admin routes */}
       {
         admin && <Box>
-          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
-          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'blue', width: '100%' }} to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'blue', width: '100%' }} to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'blue', width: '100%' }} to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
         </Box>
       }
 
@@ -83,12 +83,12 @@ function Dashboard(props) {
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
+          ml: { sm: `${drawerWidth}px` }, height:'120px'
         }}
       >
-        <Toolbar className='bg-info '>
+        <Toolbar sx={{color:'#1976D2'}}>
           <IconButton
-            color="inherit"
+            
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -96,7 +96,7 @@ function Dashboard(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" sx={{color:'white'}} noWrap component="div">
             Dashboard <i class="fas fa-columns"></i>
           </Typography>
         </Toolbar>

@@ -89,7 +89,7 @@ const Home = () => {
 
             <div id="termsService">
 
-                <Typography sx={{ fontWeight: 600, m: 2, color: '#80deea' }} variant="h6" component="div">
+                <Typography sx={{ fontWeight: 600, m: 2, color: '#80deea' , fontFamily: 'revert'}} variant="h6" component="div">
                     OUR SERVICES
                 </Typography>
 
@@ -97,7 +97,7 @@ const Home = () => {
 
             <div >
 
-                <Typography sx={{ fontWeight: 600, fontFamily: 'monospace', m: 3 }} variant="h5" component="div">
+                <Typography sx={{ fontWeight: 600, m: 3, fontFamily: 'revert' }} variant="h5" component="div">
                     SERVICE WE PROVIDE FOR YOU <i class="fas fa-hands text-info"></i>
                 </Typography>
             </div>
