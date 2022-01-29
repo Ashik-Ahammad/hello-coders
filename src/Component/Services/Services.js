@@ -21,6 +21,7 @@ const Services = () => {
             <div className="text-primary">
                 Grab a date to communicate for any of our service.
                 <h3>Available Appointments {date.toDateString()}</h3>
+                <h4 className="text-info">Call Now +8801307-450-464</h4>
             </div>
         </div>
     );
