@@ -47,7 +47,7 @@ const Header = () => {
                                         {
                                             admin && <Box>
                                             <NavLink style={{ textDecoration: 'none' }} to="/dashboard-hellocoders">
-                                           <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-user-circle"></i></Button>
+                                           <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-user-circle mx-5"></i></Button>
                                            </NavLink>
                                            </Box>
                                         }
