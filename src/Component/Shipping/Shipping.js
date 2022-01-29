@@ -3,6 +3,7 @@ import './Shipping.css';
 import { useForm } from "react-hook-form";
 import useAuth from '../../Hooks/useAuth';
 import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
+import { Grid } from '@mui/material';
 
 const Shipping = () => {
 
@@ -30,7 +31,9 @@ const Shipping = () => {
     };
 
     return (
-        <div className='shipping-container border border-2 mx-5'>
+        <Grid container  className='shipping-container'>
+            <Grid item xs={12} md={6} >
+           
             
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
                 <h4 className='text-info'>Shopping details <i class="far fa-file-alt"></i></h4>
@@ -48,7 +51,12 @@ const Shipping = () => {
 
                 <input style={{backgroundColor:'#0FA6C7',color:'white', border:'1px solid #0FA6C7 '}} type="submit" value="Confirm Order"/>
             </form>
-        </div>
+        
+            </Grid>
+            <Grid item xs={12} md={6}>
+                <img className='img-fluid p-2' src="https://i.ibb.co/cvcn3TH/More-Than-I-Should.png" alt="" />
+            </Grid>
+        </Grid>
     );
 };
 

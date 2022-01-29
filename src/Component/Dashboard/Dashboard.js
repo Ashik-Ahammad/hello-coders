@@ -22,6 +22,8 @@ import DashHome from './DashHome/DashHome';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
 import AddCourse from './AddCourse/AddCourse';
 import AddService from './AddService/AddService';
+import Home from '../Home/Home';
+import AdminRoute from '../LOGIN/AdminRoute/AdminRoute';
 
 
 const drawerWidth = 200;
@@ -43,27 +45,29 @@ function Dashboard(props) {
       
     <div>
       <Toolbar className='bg-info'>
-      <a href="home" style={{ margin:'0 auto' }}>
+      
       <img style={{ width: '90px',margin:'0 auto' }} src="https://i.ibb.co/Dpyx723/Kam-Logo-PNG.png" alt="" />
-      </a>
+      
       </Toolbar>
       <Divider />
 
       <List className='mt-3'>
-        <span className='border border-3 p-2 my-3 text-primary' ><i class="fas fa-user text-success mb-5"></i> &nbsp; {user.displayName}
+        <span className=' p-2 my-3 text-primary' ><i class="fas fa-user text-success mb-5"></i> &nbsp; {user.displayName}
         </span>
       </List>
 
-      <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
+      <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to="/home"><Button color="inherit">Back To Home</Button></Link>
+
+      <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
 
       <Divider />
 
       {/*Nested admin routes */}
       {
         admin && <Box>
-          <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-          <Link to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
-          <Link to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/addCourse`}><Button color="inherit">Add Course</Button></Link>
+          <Link style={{ textDecoration: 'none', color: 'black', width: '100%' }} to={`${url}/addService`}><Button color="inherit">Add Service</Button></Link>
         </Box>
       }
 
@@ -135,21 +139,27 @@ function Dashboard(props) {
         <Toolbar />
 
         <Switch>
+
+          <Route exact path={`${path}/home`}>
+            <Home></Home>
+          </Route>
+
           <Route exact path={path}>
             <DashHome></DashHome>
           </Route>
 
-          <Route path={`${path}/makeAdmin`}>
+          <AdminRoute path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>
-          </Route>
+          </AdminRoute>
 
-          <Route path={`${path}/addCourse`}>
+          <AdminRoute path={`${path}/addCourse`}>
             <AddCourse></AddCourse>
-          </Route>
+          </AdminRoute>
 
-          <Route path={`${path}/addService`}>
+          <AdminRoute path={`${path}/addService`}>
             <AddService></AddService>
-          </Route>
+          </AdminRoute>
+
         </Switch>
          
 

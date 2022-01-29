@@ -12,8 +12,9 @@ import { Box } from '@mui/material';
 
 const Header = () => {
 
-    const { user, logOut } = useAuth();
+    const { user, logOut,admin } = useAuth();
     const[navbar,setNavbar] = useState(false);
+    
 
     const changeBackground = () => {
         if(window.scrollY >= 80){
@@ -43,10 +44,13 @@ const Header = () => {
                                 user?.email ?
 
                                     <Box>
-                                         <NavLink style={{ textDecoration: 'none' }} to="/dashboard-hellocoders">
-                                        <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-user-circle"></i></Button>
-                                        </NavLink>
-
+                                        {
+                                            admin && <Box>
+                                            <NavLink style={{ textDecoration: 'none' }} to="/dashboard-hellocoders">
+                                           <Button sx={{ color: '#00A1C4' ,fontWeight:'bold'}} className="uptext"><i class="fas fa-user-circle"></i></Button>
+                                           </NavLink>
+                                           </Box>
+                                        }
                                         <Button onClick={logOut} sx={{ color: '#00A1C4' }} className="uptext">Logout</Button>
                                     </Box>
                                 
