@@ -23,7 +23,7 @@ const Shipping = () => {
             .then(res => res.json())
             .then(result => {
                 if (result.insertedId) {
-                    alert('Order has been received Successfully');
+                    alert('Order has been received Successfully,we will sent you a confirmation email.');
                     clearTheCart();
                     reset();
                 }

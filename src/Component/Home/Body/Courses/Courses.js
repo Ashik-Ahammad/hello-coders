@@ -11,7 +11,7 @@ import { CardActionArea, CardActions } from '@mui/material';
 
 const Courses = (props) => {
     
-    const { name: cName, description, img,price } = props.courses;
+    const { name: name, description, img,price } = props.courses;
     return (
 
         
@@ -38,7 +38,7 @@ const Courses = (props) => {
                         <CardContent>
                             <div data-aos="flip-up">
                                 <Typography variant="h5" component="div">
-                                    {cName}
+                                    {name}
                                 </Typography>
                             </div>
                             <Typography variant="body2" color="text.secondary">

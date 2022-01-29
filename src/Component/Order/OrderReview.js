@@ -45,7 +45,7 @@ const OrderReview = () => {
                 {
                     cart.map(course => <ReviewItem 
                         key={course.key}
-                        cName={course.cName}
+                        name={course.name}
                         course={course}
                         handleRemove={handleRemove}
                         ></ReviewItem>)
