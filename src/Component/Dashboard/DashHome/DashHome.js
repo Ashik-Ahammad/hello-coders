@@ -5,7 +5,7 @@ import MyOrders from '../../MyOrders/MyOrders';
 const DashHome = () => {
     return (
         <div container>
-          <Grid item xs={5} sm={7}>
+          <Grid item xs={5} sm={7} >
           <MyOrders></MyOrders>
           </Grid>
         </div>
