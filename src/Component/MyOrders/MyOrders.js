@@ -11,7 +11,7 @@ import Paper from '@mui/material/Paper';
 
 const MyOrders = () => {
 
-    const {user} = useAuth();
+    
     const [orders,SetOrders] = useState([]);
 
     useEffect(() => {
@@ -29,7 +29,8 @@ const MyOrders = () => {
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
-            <TableCell align="right">Order ID</TableCell>
+            <TableCell align="right">Phone</TableCell>
+            <TableCell align="right">Transaction ID</TableCell>
             <TableCell align="right">Email</TableCell>
             <TableCell align="right">Address</TableCell>
             
@@ -44,7 +45,8 @@ const MyOrders = () => {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.cName}</TableCell>
+              <TableCell align="right">{row.phone}</TableCell>
+              <TableCell align="right">[ {row.TrxID} ]</TableCell>
               <TableCell align="right">{row.email}</TableCell>
               <TableCell align="right">{row.address}</TableCell>
             </TableRow>
