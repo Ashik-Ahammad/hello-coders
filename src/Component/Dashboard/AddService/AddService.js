@@ -27,7 +27,7 @@ const AddService = () => {
     return (
         <div className='addService'>
             <img className='img-fluid w-25' src="https://i.ibb.co/ydMSZfv/5608.jpg" alt="" />
-            <h4>Add new service</h4>
+            <h4>ADD NEW SERVICE</h4>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input placeholder=" Service Name" {...register("name")} required/>
             <textarea placeholder="Description" {...register("description")} />
