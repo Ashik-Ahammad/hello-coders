@@ -115,7 +115,7 @@ const Home = () => {
                 <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-5 ">
                 {
                     service.map(services => <Data
-                        key={services.id}
+                        key={services._id}
                         services={services}
                     ></Data>)
                 }
