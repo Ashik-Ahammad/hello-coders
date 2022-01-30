@@ -38,6 +38,7 @@ const Contact = () => {
                 alert('Message sent!')
                 e.preventDefault();
             }
+            
         })
     }
 

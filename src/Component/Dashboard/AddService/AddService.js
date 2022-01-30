@@ -20,6 +20,7 @@ const AddService = () => {
                 reset();
             }
         })
+
       console.log(data)
     };
 
