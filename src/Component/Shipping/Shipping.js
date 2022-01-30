@@ -43,15 +43,17 @@ const Shipping = () => {
                 <h4 className='text-info'>Shopping details <i class="far fa-file-alt"></i></h4>
                 <input style={{border:'1px solid #0FA6C7 '}} defaultValue={user.displayName} {...register("name")} placeholder="Name" required/>
 
-                <input style={{border:'1px solid #0FA6C7 '}} defaultValue={user.email} {...register("email", { required: true })} placeholder="Email" required/>
+                <input style={{border:'1px solid #0FA6C7 '}} defaultValue={user.email} {...register("email", { required: true })} placeholder="Email" type="email" required/>
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="Address" defaultValue="" {...register("address")} required/>
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="City" defaultValue="" {...register("city")} required/>
 
-                <input style={{border:'1px solid #0FA6C7 '}} placeholder="Bkash No." defaultValue=" Our bkash number : 01307450464" disabled/>
+                <input className='text-primary' style={{border:'1px solid #0FA6C7 '}} placeholder="Bkash No." defaultValue=" Our bkash number : 01307450464" disabled/>
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="Payment Bkash No." defaultValue="" {...register("phone")} required/>
+
+                <input style={{border:'1px solid #0FA6C7 '}} placeholder="Contact No." defaultValue="" {...register("phoneContact")} required/>
 
                 <input style={{border:'1px solid #0FA6C7 '}} placeholder="TrxID" defaultValue="" {...register("TrxID")} required/>
 

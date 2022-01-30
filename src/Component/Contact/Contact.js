@@ -36,11 +36,9 @@ const Contact = () => {
         .then(data => {
             if(data.insertedId){
                 alert('Message sent!')
+                e.preventDefault();
             }
         })
-
-        
-        e.preventDefault();
     }
 
     return (

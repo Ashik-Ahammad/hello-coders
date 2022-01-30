@@ -71,7 +71,7 @@ const AboutUs = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h1>Why us?</h1>
+                        <h1 className='text-dark'>Why <span className='text-warning'>us </span> ?</h1>
                         <h5>Innovation is at the heart of any successful company. Innovation keeps an organization at the top of their game, allowing them to flex their competitive muscles and take pride in the work they do.
 
                             Innovation also inspires employees to do great work and contribute toward the greater good of the company. Ensure employees feel safe to share their ideas with managers and even higher-ups. Employees know the day-to-day operations best after all - they might just be the source of your next great breakthrough.</h5>
