@@ -58,5 +58,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "ansi-regex": "6.0.1",
+    "async": "3.2.2",
+    "body-parser": "1.20.3",
+    "brace-expansion": "1.1.18",
+    "braces": "3.0.3",
+    "browserify-sign": "4.2.2",
+    "browserslist": "4.24.0",
+    "compression": "1.8.2",
+    "cross-spawn": "7.0.5",
+    "decode-uri-component": "0.2.2",
+    "flatted": "3.3.2",
+    "follow-redirects": "1.15.6",
+    "http-proxy-middleware": "2.0.7",
+    "js-yaml": "3.14.1",
+    "json5": "2.2.2",
+    "jszip": "3.10.1",
+    "lodash": "4.17.21",
+    "minimatch": "3.1.2"
   }
 }
