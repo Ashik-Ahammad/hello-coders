@@ -16,7 +16,7 @@ const Body = (props) => {
             <section className="bg-design mb-5 margin">
                 <Grid container spacing={4} style={{ marginTop: '15px', marginBottom: '20px' }} >
 
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
                         <div data-aos="fade-right " className='margin-text'>
 
                             <div style={{ marginTop: '15px' }}>
@@ -48,7 +48,7 @@ const Body = (props) => {
                     </Grid>
 
 
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
 
                         <div data-aos="fade-left" style={{ marginTop: '15px' }}>
                             <img className="img-fluid banner" src={banner} alt="" />

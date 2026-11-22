@@ -49,12 +49,12 @@ const Contact = () => {
                 <h1 className="mb-5">HELLO CODERS BANGLADESH</h1>
                 <Container>
                 <Grid container spacing={4} style={{ marginTop: '15px', marginBottom: '20px',alignItems:'center' }} >
-                    <Grid item xs={12} md={6} className="text-dark " style={{ marginTop: '65px', }}>
+                    <Grid size={{ xs: 12, md: 6 }} className="text-dark " style={{ marginTop: '65px', }}>
                        
                             At Hello Coders BD, we develop innovative ideas that provide all application solution. Among a plethora of products and services, web design and development, E-commerce solutions, Business-to-Client applications, are a few that we offer.We also provide high-level language learning course. Our business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions, and the best quality/price ratio found in the industry.
                         
                         </Grid>
-                    <Grid item xs={12} md={6} className="text-white mt-4">
+                    <Grid size={{ xs: 12, md: 6 }} className="text-white mt-4">
                         
                             <h4 className="text-primary">Contact us for any information</h4>
 
@@ -95,12 +95,12 @@ const Contact = () => {
 
             <Grid container spacing={3} >
 
-                <Grid item xs={12} md={6} container >
+                <Grid container size={{ xs: 12, md: 6 }} >
 
                     <iframe style={{ margin: '30px' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4371018139136!2d90.2181580153646!3d23.909571288593096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ef9387f6a067%3A0x885cadeb8c3c50eb!2sHello%20Coders!5e0!3m2!1sen!2sbd!4v1637403641925!5m2!1sen!2sbd" width="480" height="300" className="border border-3 border-success rounded-3 mt-5 fluid" allowfullscreen="" loading="lazy" title="gmapHC"></iframe>
                 </Grid>
 
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <Typography style={{ marginBottom: '5PX', color: 'blue', marginTop: '20px' }}>
                         SEND FEEDBACK
                     </Typography>

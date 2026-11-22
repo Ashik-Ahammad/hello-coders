@@ -10,10 +10,10 @@ const Services = () => {
         <div className='margin'>
             <Container>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
                         <img style={{ width: '500px' }} src={imgS} alt="" />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
                         <Calendar date={date} setDate={setDate}></Calendar>
                     </Grid>
                 </Grid>

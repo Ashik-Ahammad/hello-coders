@@ -108,7 +108,7 @@ const AboutUs = () => {
             </Container>
 
             <Container>
-                <Grid item xs={4} sm={8} md={12} style={{ marginTop: '20px', }}>
+                <Grid size={{ xs: 4, sm: 8, md: 12 }} style={{ marginTop: '20px', }}>
                     <Members></Members>
                 </Grid>
             </Container>

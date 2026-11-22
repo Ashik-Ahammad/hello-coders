@@ -25,7 +25,7 @@ const Calendar = ({ date, setDate }) => {
                     setDate(new Date(`${value}T00:00:00`));
                 }
             }}
-            InputLabelProps={{ shrink: true }}
+            slotProps={{ inputLabel: { shrink: true } }}
             fullWidth
         />
     );

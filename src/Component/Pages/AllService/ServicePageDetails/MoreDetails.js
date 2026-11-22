@@ -19,31 +19,31 @@ const MoreDetails = () => {
         
         
         <Grid container sx={{ py: 5 }} spacing={2}>    
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <h2>Programming Language</h2>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/sbzXgYz/md2.png" alt="" />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/5kn6yHR/md1.png" alt="" />
                 </Grid>
         </Grid>
 
         <Grid container sx={{ py: 5 }} spacing={2}>    
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                 <h2>Web Design & Development</h2>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/M6yTqD4/md3.png" alt="" />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/H4cJLX0/md4.png" alt="" />
                 </Grid>
         </Grid>
 
         <Grid container sx={{ py: 5,  }} spacing={2}>    
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                 <h2>Software Solution</h2>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/tPhrgRL/md5.png" alt="" />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <img className="img-fluid" style={{ marginTop: '' }} src="https://i.ibb.co/WsRthj5/md6.png" alt="" />
                 </Grid>
         </Grid>

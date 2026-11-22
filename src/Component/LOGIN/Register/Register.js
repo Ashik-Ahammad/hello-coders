@@ -32,7 +32,7 @@ const Register = () => {
     return (
         <Container >
             <Grid container sx={{ py: 25 }} spacing={2}>
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <img src=""
                         width="100px" alt="" />
                     <Typography variant="body1" color="red" gutterBottom>
@@ -86,7 +86,7 @@ const Register = () => {
                     }{user?.email && <Alert severity="success">Congrats Successfully Registered. Welcome to Hello Coders!!!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid size={{ xs: 12, md: 6 }}>
                     <img className="img-fluid" style={{ marginTop: '' }} src={signImg} alt="" />
                 </Grid>
             </Grid>

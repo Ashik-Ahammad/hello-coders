@@ -15,7 +15,7 @@ const Courses = (props) => {
     return (
 
         
-        <Grid item xs={4} sm={4} md={4}>
+        <Grid size={{ xs: 4, sm: 4, md: 4 }}>
             <>
                 <Placeholder as="p" animation="glow">
                     <Placeholder xs={12} />

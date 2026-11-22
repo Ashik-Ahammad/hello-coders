@@ -36,7 +36,7 @@ const Shipping = () => {
 
     return (
         <Grid container  className='shipping-container' sx={{marginTop:'350px'}}>
-            <Grid item xs={12} md={6} >
+            <Grid size={{ xs: 12, md: 6 }} >
            
             
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
@@ -63,7 +63,7 @@ const Shipping = () => {
             {bookingSuccess && <Alert severity="success" className='mx-2'>Order Successful. Please wait we will sent you a confirm email. Thank you! For any information mail us at <small className='text-primary'>hellocoders.info@gmail.com</small></Alert>}
         
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
                 <img className='img-fluid p-2' src="https://i.ibb.co/C0ThLQ4/More-Than-I-Should.png" alt="" />
             </Grid>
         </Grid>

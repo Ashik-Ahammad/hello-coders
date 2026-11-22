@@ -11,7 +11,7 @@ const Member = ({ member }) => {
     const { name, position, description, img } = member;
 
     return (
-        <Grid item xs={4} sm={4} md={4}>
+        <Grid size={{ xs: 4, sm: 4, md: 4 }}>
             <Card sx={{ minWidth: 275, p: 2, boxShadow: 3 }}  >
                 <CardMedia
                     component="img"
